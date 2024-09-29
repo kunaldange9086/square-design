@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Oswald&family=Roboto+Condensed:wght@500&display=swap');
+
+/* font-family: 'Noto Serif', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+section{
+    position:relative;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(57, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+section::before{
+    content: "";
+    position:absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px,-100px);
+    background: linear-gradient(90deg,#c62ee1,#92e0e0);
+}
+section::after{
+    content: "";
+    position:absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px,100px);
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+}
+.container{
+    position: relative;
+    height:275px;
+    width: 275px;
+    z-index: 100;
+}
+.container .card{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25) ;
+}
